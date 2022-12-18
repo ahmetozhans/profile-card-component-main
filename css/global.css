@@ -1,0 +1,98 @@
+/* ### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%) */
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);   
+}
+
+body{
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-color: var(--Dark-cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom -50vh, left 50vw top 50vh;
+
+}
+
+.container{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.card-img img{
+    border-radius: 16px 16px 0 0;
+    margin-top: -1px;
+}
+
+.profile-img{
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    width: 104px;
+    height: 104px;
+    border-radius: 9999px;
+    background-color: white;
+    margin-top: -50px;
+    margin-bottom: 16px;
+}
+
+.profile-img img{
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.profile-desc{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    gap: 8px;
+}
+.profile-desc h3{
+    font-weight: 700;
+}
+.profile-desc p{
+
+    color: var(--Dark-gray);
+
+}
+.profile-loc{
+    display: flex;
+    justify-content: center;
+    color: var(--Dark-gray);
+}
+
+.profile-number{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid hsl(0deg 0% 59% / 20%);
+    padding: 24px 32px;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.profile-number .item h3{
+    font-weight: 700;
+}
+.profile-number .item p{
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--Dark-gray);
+}
